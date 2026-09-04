@@ -5,9 +5,9 @@ public class IngressoDTO {
     private int valorIngresso;
     private String codIngresso;
     private EnderecoDTO enderecoEvento;
-    private ClientDto cliente;
+    private ClienteDTO cliente;
 
-    public IngressoDTO(String tipoIngresso, int valorIngresso, String codIngresso, EnderecoDTO enderecoDTO, ClientDto cliente){
+    public IngressoDTO(String tipoIngresso, int valorIngresso, String codIngresso, EnderecoDTO enderecoDTO, ClienteDTO cliente){
         setTipoIngresso(tipoIngresso);
         setValorIngresso(valorIngresso);
         setCodIngresso(codIngresso);
@@ -31,11 +31,11 @@ public class IngressoDTO {
         return codIngresso;
     }
 
-    public ClientDto getCliente() {
+    public ClienteDTO getCliente() {
         return cliente;
     }
 
-    private void setCliente(ClientDto cliente) {
+    private void setCliente(ClienteDTO cliente) {
         this.cliente = cliente;
     }
 
