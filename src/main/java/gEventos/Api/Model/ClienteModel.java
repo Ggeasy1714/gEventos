@@ -1,4 +1,4 @@
-package Api.Model;
+package gEventos.Api.Model;
 
 public class ClienteModel {
     private String nome;

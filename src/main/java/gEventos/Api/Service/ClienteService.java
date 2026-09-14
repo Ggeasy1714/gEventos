@@ -1,8 +1,7 @@
-package Api.Service;
+package gEventos.Api.Service;
 
-import Api.Model.ClienteModel;
-import Api.Model.EnderecoModel;
-import Api.Service.Exceptions.ContaNaoEncontrada;
+import gEventos.Api.Model.ClienteModel;
+import gEventos.Api.Service.Exceptions.ContaNaoEncontrada;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -11,12 +10,6 @@ import java.util.List;
 @Service
 public class ClienteService {
 
-//    private final EnderecoModel enderecoModel = new EnderecoModel("Rua da Facada", 12, "Recife", "Pernambuco", "Brasil");
-//    private final List<ClienteModel> listaClientes = List.of(
-//            new ClienteModel("Garbagoob", 16L),
-//            new ClienteModel("AutroHungaro", 90L)
-//    );
-//
     private List<ClienteModel> listaDeClientes = new ArrayList<>();
 
     public List<ClienteModel> getAll(){

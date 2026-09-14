@@ -1,7 +1,7 @@
-package Api.Controller;
+package gEventos.Api.Controller;
 
-import Api.Model.ClienteModel;
-import Api.Service.ClienteService;
+import gEventos.Api.Model.ClienteModel;
+import gEventos.Api.Service.ClienteService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,7 +26,7 @@ public class ClienteController {
     }
 
     @PostMapping("/add/{nome}/{idade}")
-    public void adicionarCliente(@PathVariable String nome, int idade){
+    public void adicionarCliente(@PathVariable String nome, @PathVariable int idade){
         clienteService.adicionarCliente(nome, idade);
     }
 }
