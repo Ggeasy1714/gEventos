@@ -1,14 +1,14 @@
-package Api.DTO;
+package Api.Model;
 
 
-public class EventoDTO {
+public class EventoModel {
     private String nomeEvento;
     private int capacidadeTotal;
     private String tipoEvento;
     private String dataEvento;
-    private EnderecoDTO enderecoEvento;
+    private EnderecoModel enderecoEvento;
 
-    public EventoDTO(String nomeEvento, int capacidadeTotal, String tipoEvento, String dataEvento, EnderecoDTO enderecoEvento){
+    public EventoModel(String nomeEvento, int capacidadeTotal, String tipoEvento, String dataEvento, EnderecoModel enderecoEvento){
         setNomeEvento(nomeEvento);
         setCapacidadeTotal(capacidadeTotal);
         setTipoEvento(tipoEvento);
@@ -16,7 +16,7 @@ public class EventoDTO {
         setEnderecoEvento(enderecoEvento);
     }
 
-    public EnderecoDTO getEnderecoEvento() {
+    public EnderecoModel getEnderecoEvento() {
         return enderecoEvento;
     }
 
@@ -36,7 +36,7 @@ public class EventoDTO {
         return tipoEvento;
     }
 
-    private void setEnderecoEvento(EnderecoDTO enderecoEvento) {
+    private void setEnderecoEvento(EnderecoModel enderecoEvento) {
         this.enderecoEvento = enderecoEvento;
     }
 

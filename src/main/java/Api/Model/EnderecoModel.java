@@ -1,13 +1,13 @@
-package Api.DTO;
+package Api.Model;
 
-public class EnderecoDTO {
+public class EnderecoModel {
     private String nomeEndereco;
     private int numeroEndereco;
     private String cidadeEndereco;
     private String estado;
     private String pais;
 
-    public EnderecoDTO(String nomeEndereco, int numeroEndereco, String cidadeEndereco, String estado, String pais){
+    public EnderecoModel(String nomeEndereco, int numeroEndereco, String cidadeEndereco, String estado, String pais){
         setNomeEndereco(nomeEndereco);
         setNumeroEndereco(numeroEndereco);
         setCidadeEndereco(cidadeEndereco);

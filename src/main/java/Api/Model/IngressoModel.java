@@ -1,13 +1,13 @@
-package Api.DTO;
+package Api.Model;
 
-public class IngressoDTO {
+public class IngressoModel {
     private String tipoIngresso;
     private int valorIngresso;
     private String codIngresso;
-    private EnderecoDTO enderecoEvento;
-    private ClienteDTO cliente;
+    private EnderecoModel enderecoEvento;
+    private ClienteModel cliente;
 
-    public IngressoDTO(String tipoIngresso, int valorIngresso, String codIngresso, EnderecoDTO enderecoDTO, ClienteDTO cliente){
+    public IngressoModel(String tipoIngresso, int valorIngresso, String codIngresso, EnderecoModel enderecoDTO, ClienteModel cliente){
         setTipoIngresso(tipoIngresso);
         setValorIngresso(valorIngresso);
         setCodIngresso(codIngresso);
@@ -23,7 +23,7 @@ public class IngressoDTO {
         return tipoIngresso;
     }
 
-    public EnderecoDTO getEnderecoEvento() {
+    public EnderecoModel getEnderecoEvento() {
         return enderecoEvento;
     }
 
@@ -31,11 +31,11 @@ public class IngressoDTO {
         return codIngresso;
     }
 
-    public ClienteDTO getCliente() {
+    public ClienteModel getCliente() {
         return cliente;
     }
 
-    private void setCliente(ClienteDTO cliente) {
+    private void setCliente(ClienteModel cliente) {
         this.cliente = cliente;
     }
 
@@ -43,7 +43,7 @@ public class IngressoDTO {
         this.codIngresso = codIngresso;
     }
 
-    private void setEnderecoEvento(EnderecoDTO enderecoEvento) {
+    private void setEnderecoEvento(EnderecoModel enderecoEvento) {
         this.enderecoEvento = enderecoEvento;
     }
 
