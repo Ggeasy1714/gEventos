@@ -1,4 +1,4 @@
-package Api.Model;
+package gEventos.Api.Model;
 
 public class IngressoModel {
     private String tipoIngresso;
