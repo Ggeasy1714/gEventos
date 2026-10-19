@@ -1,6 +1,7 @@
 package gEventos.Api.Mapper;
 
 import gEventos.Api.DTO.ClientDTO;
+import gEventos.Api.DTO.ClienteRequest;
 import gEventos.Api.Model.ClienteModel;
 
 public class ContaMapper {
@@ -12,7 +13,7 @@ public class ContaMapper {
         );
     }
     // ida: ContaRequest -> Entity (usado no Service)
-//    public static ClienteModel paraEntity(ContaRequest r) {
-//        return new Conta(r.titular(), r.saldo());
-//    }
+    public static ClienteModel paraEntity(ClienteRequest r) {
+        return new ClienteModel(r.nome(), r.idade());
+    }
 }

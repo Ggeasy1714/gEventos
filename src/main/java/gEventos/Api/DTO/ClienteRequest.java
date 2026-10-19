@@ -14,5 +14,5 @@ public record ClienteRequest(
         
         @NotNull
         @DecimalMin("0.00")
-        BigDecimal idade
+        int idade
 ) {}
